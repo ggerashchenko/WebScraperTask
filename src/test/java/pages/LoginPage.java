@@ -3,6 +3,7 @@ package pages;
 import static com.codeborne.selenide.Selenide.$;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public class LoginPage {
@@ -12,25 +13,35 @@ public class LoginPage {
 	private SelenideElement submitButton = $(By.cssSelector("input[value=\"Login\"]"));
 	public SelenideElement pageTitle = $(By.cssSelector("#content h1"));
 
-	private LoginPage enterCredentials(String userName, String password) {
+	@Step("Enter username: {userName}")
+	private void enterUserName(String userName) {
 		loginField.setValue(userName);
+	}
+	@Step("Enter password: {password}")
+	private void enterPassword(String password) {
 		passwordField.setValue(password);
-		return this;
+	}
+
+	@Step("Click Submit button")
+	private void clickSubmitButton() {
+		submitButton.click();
 	}
 
 	public SuccessLoginPage successLogin(String userName, String password) {
-		enterCredentials(userName, password);
-		submitButton.click();
+		enterUserName(userName);
+		enterPassword(password);
+		clickSubmitButton();
 		return new SuccessLoginPage();
 	}
 
 	public ErrorLoginPage failedLogin() {
-		submitButton.click();
+		clickSubmitButton();
 		return new ErrorLoginPage();
 	}
 
 	public ErrorLoginPage failedLogin(String userName, String password) {
-		enterCredentials(userName, password);
+		enterUserName(userName);
+		enterPassword(password);
 		return failedLogin();
 	}
 }

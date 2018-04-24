@@ -1,6 +1,9 @@
 package web;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -28,12 +31,11 @@ public class BasicTestCase {
 	public void testTearDown() {
 		getWebDriver().manage().deleteAllCookies();
 		getWebDriver().quit();
-
 	}
 
-	@AfterClass
-	public static void suitTearDown() {
-		getWebDriver().quit();
+	@Step("Verify that message: {message} is displayed")
+	void verifyMessageDisplayed(SelenideElement element, String message) {
+		element.shouldBe(Condition.visible).shouldHave(Condition.exactText(message));
 	}
 
 }
