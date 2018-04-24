@@ -1,7 +1,6 @@
-package tests;
+package web;
 
 import com.codeborne.selenide.Selenide;
-import io.qameta.allure.Step;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

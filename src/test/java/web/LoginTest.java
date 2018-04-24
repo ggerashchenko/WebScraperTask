@@ -1,4 +1,4 @@
-package tests;
+package web;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.junit4.DisplayName;
