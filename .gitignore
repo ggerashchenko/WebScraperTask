@@ -4,3 +4,4 @@ chromedriver
 .allure
 .idea/
 wstg.iml
+build/reports/tests
