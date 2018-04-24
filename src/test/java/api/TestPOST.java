@@ -1,4 +1,4 @@
-package API;
+package api;
 
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
@@ -16,13 +16,13 @@ public class TestPOST {
 
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
 
-		Response response =  given().
-				formParam("usr", "admin").
-				formParam("pwd", "12345").
-				expect().log().all().
-				statusCode(302).
-				when().
-				post("/login?mode=login");
+		Response response =  given()
+				.formParam("usr", "admin")
+				.formParam("pwd", "12345")
+				.expect().log().all()
+				.statusCode(302)
+				.when()
+				.post("/login?mode=login");
 		String responseBody = response.getBody().print();
 		Assert.assertTrue(responseBody.contains("REDIRECTING...</h3>"));
 		RestAssured.reset();
@@ -34,17 +34,17 @@ public class TestPOST {
 
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
 
-		Response response =  given().
-				formParam("usr", "admin").
-				formParam("pwd", "12345").
-				expect().
-				statusCode(302).
-				when().
-				post("/login?mode=login");
+		Response response =  given()
+				.formParam("usr", "admin")
+				.formParam("pwd", "12345")
+				.expect()
+				.statusCode(302)
+				.when()
+				.post("/login?mode=login");
 		Response getResponse = given()
 				.cookies(response.getCookies())
 				.expect()
-				.statusCode(200).log().all()
+				.statusCode(200)
 				.when()
 				.get(response.getHeaders().get("Location").getValue());
 		String responseBody = getResponse.getBody().print();
@@ -59,13 +59,13 @@ public class TestPOST {
 
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
 
-		Response response =  given().
-				formParam("usr", "").
-				formParam("pwd", "").
-				expect().log().all().
-				statusCode(200).
-				when().
-				post("/login?mode=login");
+		Response response =  given()
+				.formParam("usr", "")
+				.formParam("pwd", "")
+				.expect()
+				.statusCode(200)
+				.when()
+				.post("/login?mode=login");
 		String responseBody = response.getBody().print();
 		Assert.assertTrue(responseBody.contains("ACCESS DENIED!</h3>"));
 		RestAssured.reset();
@@ -77,16 +77,16 @@ public class TestPOST {
 
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
 
-		Response response =  given().
-				formParam("usr", "admin").
-				formParam("pwd", "12345").
-				expect().
-				statusCode(302).
-				when().
-				post("/login?mode=login");
+		Response response =  given()
+				.formParam("usr", "admin")
+				.formParam("pwd", "12345")
+				.expect()
+				.statusCode(302)
+				.when()
+				.post("/login?mode=login");
 		Response getResponse = given()
 				.expect()
-				.statusCode(200).log().all()
+				.statusCode(200)
 				.when()
 				.get(response.getHeaders().get("Location").getValue());
 		String responseBody = getResponse.getBody().print();
