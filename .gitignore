@@ -3,3 +3,4 @@ target
 chromedriver
 .allure
 .idea/
+wstg.iml
