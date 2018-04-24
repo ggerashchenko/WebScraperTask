@@ -1,5 +1,6 @@
 package API;
 
+import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Assert;
@@ -10,6 +11,7 @@ import static io.restassured.RestAssured.given;
 public class TestPOST {
 
 	@Test
+	@DisplayName("Test redirect status.")
 	public void testRedirect() {
 
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
@@ -27,7 +29,9 @@ public class TestPOST {
 	}
 
 	@Test
+	@DisplayName("Test success login status.")
 	public void testSuccessLogin() {
+
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
 
 		Response response =  given().
@@ -50,6 +54,7 @@ public class TestPOST {
 	}
 
 	@Test
+	@DisplayName("Test access denied status.")
 	public void testAccessDenied() {
 
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
@@ -67,7 +72,9 @@ public class TestPOST {
 	}
 
 	@Test
+	@DisplayName("Test no cookies status.")
 	public void testNoCookie() {
+
 		RestAssured.baseURI = "http://testing-ground.scraping.pro";
 
 		Response response =  given().
