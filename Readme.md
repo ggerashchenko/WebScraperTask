@@ -1,12 +1,11 @@
 [![Build Status](https://travis-ci.org/ggerashchenko/WebScraperTask.svg?branch=master)](https://travis-ci.org/ggerashchenko/WebScraperTask)
 ##  Document purpose
-I will try briefly to explain how i wanted to approach testing, which difficulties I faced and what I actually was able to produce.
+I will try briefly to explain how I wanted to approach testing, which difficulties I faced and what I actually was able to produce.
 
 ## Initial technical task:
 Imagine we have a dummy login page here: http://testing-ground.scraping.pro/login. As a test automation engineer,
 you are asked to write some automated UI tests to check its login functionality.
-You may use any tools/resource you prefer and take as long as you need. At the end, please submit your solution to us either via Email
- or public repository on GitHub. We will:
+You may use any tools/resource you prefer and take as long as you need. At the end, please submit your solution to us either via Email or public repository on GitHub. We will:
 
 Compile your project
 Run your solution
@@ -15,7 +14,7 @@ Evaluate the quality of your tests/solution.
 ## Original plan was:
 1. Write tests in Java
 2. Use [Selenide](http://selenide.org/) library for UI test
-3. Use TestNG as test runner
+3. Use JUnit as test runner
 4. Write next tests:
     * Success login
     * Login with wrong and empty credentials
@@ -46,6 +45,5 @@ you need to install `allure` with `brew install allure`. In case you do not have
 of the report in `allure-report-example/index.html`
 
 ## What could be improved : 
-- Chromedriver should not be part of resources, but instead docker container with chrome driver should be used. There are two options available : 
-    - Either to run tests inside default chrome container taken from [Doker Selenium](https://github.com/SeleniumHQ/docker-selenium)
+- Docker container with chrome driver can be used.
     - In case when Selenium Grid is needed, then [Selenoid](https://github.com/aerokube/selenoid)can be used
