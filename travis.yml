@@ -1,0 +1,16 @@
+os: linux
+language: java
+jdk:
+  - oraclejdk8
+env: DISPLAY=':99.0'
+dist: trusty
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+before_script:
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3 # give xvfb some time to start
+script: mvn clean test
