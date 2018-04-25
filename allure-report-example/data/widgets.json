@@ -1,0 +1,69 @@
+{
+  "summary" : {
+    "reportName" : "Allure Report",
+    "testRuns" : [ ],
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    },
+    "time" : {
+      "start" : 1524657558346,
+      "stop" : 1524657580093,
+      "duration" : 21747,
+      "minDuration" : 336,
+      "maxDuration" : 4964,
+      "sumDuration" : 21587
+    }
+  },
+  "environment" : [ ],
+  "suites" : {
+    "total" : 2,
+    "items" : [ {
+      "uid" : "c6511b112b507d63a8aa32c4209759a5",
+      "name" : "web.LoginTest",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      }
+    }, {
+      "uid" : "1a2fa8bed60bf6fbc74002360c5ef38e",
+      "name" : "api.TestPOSTLogin",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      }
+    } ]
+  },
+  "history-trend" : [ {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  } ],
+  "behaviors" : {
+    "total" : 9,
+    "items" : [ ]
+  },
+  "executors" : [ ],
+  "categories" : {
+    "total" : 0,
+    "items" : [ ]
+  },
+  "launches" : [ ]
+}

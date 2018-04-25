@@ -1,0 +1,56 @@
+{
+  "uid" : "adf61317b65c806f",
+  "name" : "Test success login status.",
+  "fullName" : "api.TestPOSTLogin.testSuccessLogin",
+  "historyId" : "7850a4f5621356f5457a21f482f48060",
+  "time" : {
+    "start" : 1524657578751,
+    "stop" : 1524657579435,
+    "duration" : 684
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "api"
+  }, {
+    "name" : "testClass",
+    "value" : "api.TestPOSTLogin"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSuccessLogin"
+  }, {
+    "name" : "suite",
+    "value" : "api.TestPOSTLogin"
+  }, {
+    "name" : "host",
+    "value" : "NB-2631.local"
+  }, {
+    "name" : "thread",
+    "value" : "71303@NB-2631.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "adf61317b65c806f.json",
+  "parameterValues" : [ ]
+}

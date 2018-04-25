@@ -1,0 +1,91 @@
+[ {
+  "uid" : "83c1937f5fb76fe0",
+  "name" : "Test access denied status.",
+  "time" : {
+    "start" : 1524657576357,
+    "stop" : 1524657578410,
+    "duration" : 2053
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e06b1d213e00e70",
+  "name" : "Test no cookies status.",
+  "time" : {
+    "start" : 1524657579437,
+    "stop" : 1524657580093,
+    "duration" : 656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "884d8887e5cdd151",
+  "name" : "Test access denied status with wrong credentials.",
+  "time" : {
+    "start" : 1524657566961,
+    "stop" : 1524657570146,
+    "duration" : 3185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a9cd9ab8850f84",
+  "name" : "Test success login to the system.",
+  "time" : {
+    "start" : 1524657558346,
+    "stop" : 1524657563310,
+    "duration" : 4964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fd973c89cc478ea6",
+  "name" : "Test Back button navigating to login screen.",
+  "time" : {
+    "start" : 1524657563446,
+    "stop" : 1524657566957,
+    "duration" : 3511
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adf61317b65c806f",
+  "name" : "Test success login status.",
+  "time" : {
+    "start" : 1524657578751,
+    "stop" : 1524657579435,
+    "duration" : 684
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "184e3ed8c7865b73",
+  "name" : "Test access denied status without credentials.",
+  "time" : {
+    "start" : 1524657573615,
+    "stop" : 1524657576351,
+    "duration" : 2736
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bfb86edd7b9e66a5",
+  "name" : "Test redirect status.",
+  "time" : {
+    "start" : 1524657578412,
+    "stop" : 1524657578748,
+    "duration" : 336
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d4516cb000e9591c",
+  "name" : "Test status after cookie been deleted.",
+  "time" : {
+    "start" : 1524657570150,
+    "stop" : 1524657573612,
+    "duration" : 3462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

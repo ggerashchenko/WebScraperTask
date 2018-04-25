@@ -1,0 +1,132 @@
+{
+  "uid" : "fd973c89cc478ea6",
+  "name" : "Test Back button navigating to login screen.",
+  "fullName" : "web.LoginTest.goBackAfterSuccessLoginTest",
+  "historyId" : "5ec7dbb0bb1f8734781a90daef43c34b",
+  "time" : {
+    "start" : 1524657563446,
+    "stop" : 1524657566957,
+    "duration" : 3511
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter username: 'admin'",
+      "time" : {
+        "start" : 1524657565807,
+        "stop" : 1524657565943,
+        "duration" : 136
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userName",
+        "value" : "admin"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password: '12345'",
+      "time" : {
+        "start" : 1524657565944,
+        "stop" : 1524657566048,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "12345"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click Submit button",
+      "time" : {
+        "start" : 1524657566048,
+        "stop" : 1524657566548,
+        "duration" : 500
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Click Back button",
+      "time" : {
+        "start" : 1524657566549,
+        "stop" : 1524657566833,
+        "duration" : 284
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "web"
+  }, {
+    "name" : "testClass",
+    "value" : "web.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "goBackAfterSuccessLoginTest"
+  }, {
+    "name" : "suite",
+    "value" : "web.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "NB-2631.local"
+  }, {
+    "name" : "thread",
+    "value" : "71303@NB-2631.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "fd973c89cc478ea6.json",
+  "parameterValues" : [ ]
+}

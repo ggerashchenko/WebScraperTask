@@ -41,7 +41,8 @@ I didn't manage to reproduce "REDIRECTING" scenario with Selenium tests, but I m
 
 In order to run test you can use IDE or you need to call `mvn cleat test` task inside the project folder.
 In order to get report you need to call `allure serve allure-results/` task inside the project folder. But to be able to do so
- you need to have allure installed on the machine
+you need to install `allure` with `brew install allure`. In case you do not have `brew` you can look at the example
+of the report in `allure-report-example/index.html`
 
 ## What could be improved : 
 - Chromedriver should not be part of resources, but instead docker container with chrome driver should be used. There are two options available : 

@@ -1,0 +1,121 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "NB-2631.local",
+    "children" : [ {
+      "name" : "71303@NB-2631.local.main(1)",
+      "children" : [ {
+        "name" : "Test access denied status.",
+        "uid" : "83c1937f5fb76fe0",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657576357,
+          "stop" : 1524657578410,
+          "duration" : 2053
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test no cookies status.",
+        "uid" : "1e06b1d213e00e70",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657579437,
+          "stop" : 1524657580093,
+          "duration" : 656
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test access denied status with wrong credentials.",
+        "uid" : "884d8887e5cdd151",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657566961,
+          "stop" : 1524657570146,
+          "duration" : 3185
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test success login to the system.",
+        "uid" : "7a9cd9ab8850f84",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657558346,
+          "stop" : 1524657563310,
+          "duration" : 4964
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Back button navigating to login screen.",
+        "uid" : "fd973c89cc478ea6",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657563446,
+          "stop" : 1524657566957,
+          "duration" : 3511
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test success login status.",
+        "uid" : "adf61317b65c806f",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657578751,
+          "stop" : 1524657579435,
+          "duration" : 684
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test access denied status without credentials.",
+        "uid" : "184e3ed8c7865b73",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657573615,
+          "stop" : 1524657576351,
+          "duration" : 2736
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test redirect status.",
+        "uid" : "bfb86edd7b9e66a5",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657578412,
+          "stop" : 1524657578748,
+          "duration" : 336
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test status after cookie been deleted.",
+        "uid" : "d4516cb000e9591c",
+        "parentUid" : "599134431ca77655f7be42ee2b744371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1524657570150,
+          "stop" : 1524657573612,
+          "duration" : 3462
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "599134431ca77655f7be42ee2b744371"
+    } ],
+    "uid" : "5debad0db6aa52dec3b66aa820add05f"
+  } ]
+}

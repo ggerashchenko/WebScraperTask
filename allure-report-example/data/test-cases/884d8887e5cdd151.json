@@ -1,0 +1,138 @@
+{
+  "uid" : "884d8887e5cdd151",
+  "name" : "Test access denied status with wrong credentials.",
+  "fullName" : "web.LoginTest.accessDeniedWithWrongCredentialsForLoginTest",
+  "historyId" : "fccf4c6f8040b5ad872927eaa30d4399",
+  "time" : {
+    "start" : 1524657566961,
+    "stop" : 1524657570146,
+    "duration" : 3185
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Enter username: 'incorrectUserName'",
+      "time" : {
+        "start" : 1524657569315,
+        "stop" : 1524657569492,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userName",
+        "value" : "incorrectUserName"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Enter password: 'wrongPassword'",
+      "time" : {
+        "start" : 1524657569492,
+        "stop" : 1524657569621,
+        "duration" : 129
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "password",
+        "value" : "wrongPassword"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Click Submit button",
+      "time" : {
+        "start" : 1524657569622,
+        "stop" : 1524657569940,
+        "duration" : 318
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Verify that message: 'ACCESS DENIED!' is visible and has text",
+      "time" : {
+        "start" : 1524657570020,
+        "stop" : 1524657570052,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "<span class=\"error\">ACCESS DENIED!</span>"
+      }, {
+        "name" : "message",
+        "value" : "ACCESS DENIED!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "web"
+  }, {
+    "name" : "testClass",
+    "value" : "web.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "accessDeniedWithWrongCredentialsForLoginTest"
+  }, {
+    "name" : "suite",
+    "value" : "web.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "NB-2631.local"
+  }, {
+    "name" : "thread",
+    "value" : "71303@NB-2631.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "884d8887e5cdd151.json",
+  "parameterValues" : [ ]
+}

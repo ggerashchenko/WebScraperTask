@@ -1,0 +1,102 @@
+{
+  "uid" : "184e3ed8c7865b73",
+  "name" : "Test access denied status without credentials.",
+  "fullName" : "web.LoginTest.accessDeniedWithoutCredentialsForLoginTest",
+  "historyId" : "5ab607be5347d7783a79578b937452b9",
+  "time" : {
+    "start" : 1524657573615,
+    "stop" : 1524657576351,
+    "duration" : 2736
+  },
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Click Submit button",
+      "time" : {
+        "start" : 1524657575825,
+        "stop" : 1524657576145,
+        "duration" : 320
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Verify that message: 'ACCESS DENIED!' is visible and has text",
+      "time" : {
+        "start" : 1524657576227,
+        "stop" : 1524657576258,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "element",
+        "value" : "<span class=\"error\">ACCESS DENIED!</span>"
+      }, {
+        "name" : "message",
+        "value" : "ACCESS DENIED!"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "web"
+  }, {
+    "name" : "testClass",
+    "value" : "web.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "accessDeniedWithoutCredentialsForLoginTest"
+  }, {
+    "name" : "suite",
+    "value" : "web.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "NB-2631.local"
+  }, {
+    "name" : "thread",
+    "value" : "71303@NB-2631.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "source" : "184e3ed8c7865b73.json",
+  "parameterValues" : [ ]
+}
