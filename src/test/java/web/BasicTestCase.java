@@ -3,6 +3,7 @@ package web;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
+import data.TestPropertiesLoader;
 import io.qameta.allure.Step;
 import org.junit.After;
 import org.junit.Before;
@@ -12,13 +13,14 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class BasicTestCase {
 
-	private static String BASE_URL = "http://testing-ground.scraping.pro/login";
-	private static String CHROMEDRIVER_URL = "/Users/grygorii.gerashchenko/Work/wstg/src/main/resources/chromedriver";
+	private static String BASE_URL = TestPropertiesLoader.getBaseUrl();
+	private static String chromeDriverPath = TestPropertiesLoader.getChromeDriverPath();
+	private static String BROWSER = TestPropertiesLoader.getBrowser();
 
 	@BeforeClass
 	public static void setup() {
-		System.setProperty("webdriver.chrome.driver", CHROMEDRIVER_URL);
-		System.setProperty("selenide.browser", "Chrome");
+		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
+		System.setProperty("selenide.browser", BROWSER);
 	}
 
 	@Before

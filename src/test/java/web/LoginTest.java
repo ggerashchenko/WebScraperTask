@@ -1,6 +1,7 @@
 package web;
 
 import com.codeborne.selenide.Condition;
+import data.TestPropertiesLoader;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
@@ -12,19 +13,21 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class LoginTest extends BasicTestCase {
 
-	LoginPage loginPage = new LoginPage();
+	private LoginPage loginPage = new LoginPage();
+	private String successLogin = TestPropertiesLoader.getLogin();
+	private String successPassword = TestPropertiesLoader.getPassword();
 
 	@Test
 	@DisplayName("Test success login to the system.")
 	public void successLoginTest() {
-		SuccessLoginPage successLoginPage = loginPage.successLogin("admin", "12345");
+		SuccessLoginPage successLoginPage = loginPage.successLogin(successLogin, successPassword);
 		verifyMessageDisplayed(successLoginPage.successLoginMessage, "WELCOME :)");
 	}
 
 	@Test
 	@DisplayName("Test status after cookie been deleted.")
 	public void noCookieLoginTest() {
-		loginPage.successLogin("admin", "12345");
+		loginPage.successLogin(successLogin, successPassword);
 		WebDriver driver = getWebDriver();
 		driver.manage().deleteCookieNamed("tdsess");
 		driver.navigate().refresh();
@@ -49,7 +52,7 @@ public class LoginTest extends BasicTestCase {
 	@Test
 	@DisplayName("Test Back button navigating to login screen.")
 	public void goBackAfterSuccessLoginTest() {
-		SuccessLoginPage successLoginPage = loginPage.successLogin("admin", "12345");
+		SuccessLoginPage successLoginPage = loginPage.successLogin(successLogin, successPassword);
 		loginPage = successLoginPage.goBackToLoginPage();
 		loginPage.pageTitle.shouldHave(Condition.exactText("LOGIN"));
 	}
