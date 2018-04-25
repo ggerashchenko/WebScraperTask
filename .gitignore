@@ -3,5 +3,5 @@ target
 chromedriver
 .allure
 .idea/
-wstg.iml
-build/reports/tests
+WebScraper.iml
+build

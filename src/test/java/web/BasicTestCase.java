@@ -13,19 +13,19 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class BasicTestCase {
 
-	private static String BASE_URL = TestPropertiesLoader.getBaseUrl();
+	private static String baseUrl = TestPropertiesLoader.getBaseUrl();
 	private static String chromeDriverPath = TestPropertiesLoader.getChromeDriverPath();
-	private static String BROWSER = TestPropertiesLoader.getBrowser();
+	private static String browser = TestPropertiesLoader.getBrowser();
 
 	@BeforeClass
 	public static void setup() {
 		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
-		System.setProperty("selenide.browser", BROWSER);
+		System.setProperty("selenide.browser", browser);
 	}
 
 	@Before
 	public void openPage() {
-		Selenide.open(BASE_URL);
+		Selenide.open(baseUrl + "/login");
 	}
 
 	@After
@@ -34,8 +34,8 @@ public class BasicTestCase {
 		getWebDriver().quit();
 	}
 
-	@Step("Verify that message: {message} is displayed")
-	void verifyMessageDisplayed(SelenideElement element, String message) {
+	@Step("Verify that message: '{message}' is visible and has text")
+	void verifyMessageVisibleAndHasText(SelenideElement element, String message) {
 		element.shouldBe(Condition.visible).shouldHave(Condition.exactText(message));
 	}
 

@@ -13,11 +13,11 @@ public class LoginPage {
 	private SelenideElement submitButton = $(By.cssSelector("input[value=\"Login\"]"));
 	public SelenideElement pageTitle = $(By.cssSelector("#content h1"));
 
-	@Step("Enter username: {userName}")
+	@Step("Enter username: '{userName}'")
 	private void enterUserName(String userName) {
 		loginField.setValue(userName);
 	}
-	@Step("Enter password: {password}")
+	@Step("Enter password: '{password}'")
 	private void enterPassword(String password) {
 		passwordField.setValue(password);
 	}

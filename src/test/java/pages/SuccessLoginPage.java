@@ -12,11 +12,8 @@ public class SuccessLoginPage {
 	public SelenideElement successLoginMessage = $(By.className("success"));
 
 	@Step("Click Back button")
-	private void clickBackButton() {
-		backButton.click();
-	}
 	public LoginPage goBackToLoginPage() {
-		clickBackButton();
+		backButton.click();
 		return new LoginPage();
 	}
 }

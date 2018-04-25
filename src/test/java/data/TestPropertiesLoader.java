@@ -9,12 +9,12 @@ import java.util.Properties;
 public class TestPropertiesLoader {
 	private static Properties testProperties;
 
-	public static final String TEST_PROPERTIES = "test.properties";
-	public static final String KEY_LOGIN = "username";
-	public static final String KEY_PASSWORD = "password";
-	public static final String BASE_URL = "URL";
-	public static final String KEY_CHROME_DRIVER_PATH = "chromedriver";
-	public static final String BROWSER = "browser";
+	private static final String TEST_PROPERTIES = "test.properties";
+	private static final String KEY_LOGIN = "username";
+	private static final String KEY_PASSWORD = "password";
+	private static final String BASE_URL = "baseUrl";
+	private static final String KEY_CHROME_DRIVER_PATH = "chromedriver";
+	private static final String BROWSER = "browser";
 
 
 	private TestPropertiesLoader() {

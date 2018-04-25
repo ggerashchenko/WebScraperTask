@@ -21,7 +21,7 @@ public class LoginTest extends BasicTestCase {
 	@DisplayName("Test success login to the system.")
 	public void successLoginTest() {
 		SuccessLoginPage successLoginPage = loginPage.successLogin(successLogin, successPassword);
-		verifyMessageDisplayed(successLoginPage.successLoginMessage, "WELCOME :)");
+		verifyMessageVisibleAndHasText(successLoginPage.successLoginMessage, "WELCOME :)");
 	}
 
 	@Test
@@ -32,21 +32,21 @@ public class LoginTest extends BasicTestCase {
 		driver.manage().deleteCookieNamed("tdsess");
 		driver.navigate().refresh();
 		ErrorLoginPage errorLoginPage = new ErrorLoginPage();
-		verifyMessageDisplayed(errorLoginPage.sessionMissingCookieError, "THE SESSION COOKIE IS MISSING OR HAS A WRONG VALUE!");
+		verifyMessageVisibleAndHasText(errorLoginPage.sessionMissingCookieError, "THE SESSION COOKIE IS MISSING OR HAS A WRONG VALUE!");
 	}
 
 	@Test
 	@DisplayName("Test access denied status without credentials.")
 	public void accessDeniedWithoutCredentialsForLoginTest() {
 		ErrorLoginPage errorLoginPage = loginPage.failedLogin();
-		verifyMessageDisplayed(errorLoginPage.accessDeniedError, "ACCESS DENIED!");
+		verifyMessageVisibleAndHasText(errorLoginPage.accessDeniedError, "ACCESS DENIED!");
 	}
 
 	@Test
 	@DisplayName("Test access denied status with wrong credentials.")
 	public void accessDeniedWithWrongCredentialsForLoginTest() {
 		ErrorLoginPage errorLoginPage = loginPage.failedLogin("incorrectUserName", "wrongPassword");
-		verifyMessageDisplayed(errorLoginPage.accessDeniedError, "ACCESS DENIED!");
+		verifyMessageVisibleAndHasText(errorLoginPage.accessDeniedError, "ACCESS DENIED!");
 	}
 
 	@Test
