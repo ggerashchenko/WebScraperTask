@@ -9,17 +9,19 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 
+import java.io.File;
+
+import static com.codeborne.selenide.WebDriverRunner.getAndCheckWebDriver;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 
 public class BasicTestCase {
 
 	private static String baseUrl = TestPropertiesLoader.getBaseUrl();
-	private static String chromeDriverPath = TestPropertiesLoader.getChromeDriverPath();
 	private static String browser = TestPropertiesLoader.getBrowser();
+
 
 	@BeforeClass
 	public static void setup() {
-		System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 		System.setProperty("selenide.browser", browser);
 	}
 

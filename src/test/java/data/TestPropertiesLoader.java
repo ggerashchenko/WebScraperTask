@@ -13,7 +13,6 @@ public class TestPropertiesLoader {
 	private static final String KEY_LOGIN = "username";
 	private static final String KEY_PASSWORD = "password";
 	private static final String BASE_URL = "baseUrl";
-	private static final String KEY_CHROME_DRIVER_PATH = "chromedriver";
 	private static final String BROWSER = "browser";
 
 
@@ -45,9 +44,6 @@ public class TestPropertiesLoader {
 		return properties;
 	}
 
-	public static String getChromeDriverPath() {
-		return getPropertyAndFailIfMissing(KEY_CHROME_DRIVER_PATH);
-	}
 	public static String getBrowser() {
 		return getPropertyAndFailIfMissing(BROWSER);
 	}
