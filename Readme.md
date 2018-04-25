@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/ggerashchenko/WebScraperTask.svg?branch=master)](https://travis-ci.org/ggerashchenko/WebScraperTask)
 ##  Document purpose
 I will try briefly to explain how i wanted to approach testing, which difficulties I faced and what I actually was able to produce.
 
